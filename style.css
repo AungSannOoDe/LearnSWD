@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
- .hello1{
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+.hello1{
     background-color: aqua;
     color: white;
      font-size: 50px;
@@ -11,11 +16,144 @@
   .border{
     border: 4px solid salmon;
   }
+  /* .emphasis{
+    text-emphasis: "😻" salmon;
+    text-rendering: geometricPrecision;
+    
+  } */
+   .flex{
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; 
+     
+   }
+   .relative{
+    position: relative;
+    width: 300px;
+    margin-top: 30px;
+    height: 300px;
+   }
+  .clip-path{
+    position: relative;
+    overflow: hidden;
+    width: 500px;
+    height: 550px;
+    background-color: #4E6688;
+    transform: scale(2.8);
+    transform-origin: top left; 
+    clip-path: path("M 10 20 L 60 20 A 10 10 0 0 0 70 10 L 70 10 A 10 10 0 0 1 80 0 L 140 0 A 10 10 0 0 1 150 10 L 150 190 A 10 10 0 0 1 140 200 L 10 200 A 10,10,0,0,1  0 190 L 0 30 A 10 10 0 0 1 10 20 Z")
+  }
+  .p-title{
+    margin-top: 10px;
+    color: #E3EEB2;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 50px;
+    text-align: center;
+  }
+  .p-price{
+    color: #E3EEB2;
+    margin-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    text-align: center;
+  }
+  .price-card{
+    width: 400px;
+    left: 10px;
+    border-radius: 10px;
+    height: 200px;
+    overflow: hidden;
+    margin-top: 12px;
+    top: 12px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    position: relative;
+    background-color: #332D56;
+  }
+  .overflow-example{
+    border: 1px solid salmon;
+    width: 300px;
+    overflow: scroll;
+    white-space: nowrap;
+    height: 60px;
+  }
+   .text-overflow{
+       width: 100px;
+      background-color: aquamarine;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow:ellipsis;
+      /* overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis; */
+   }
+   .Cating-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 10px;
+   }
+  
+   .color-1{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: black;
+   }
+   .color-1{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: blue;
+    border: 2px solid #E3EEB2;
+   }
+   .cart{
+    width: 50px;
+    height: 50px;
+    border: 1px solid #E3EEB2 ;
+    border-radius: 50%;
+    text-align: center;
+   }
+   .color-2{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+    border: 2px solid #E3EEB2;
+   }
+   .color-3{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: black;
+    border: 2px solid #E3EEB2;
+   }
+   body{
+    height: 1000vh;
+   }
+  .text-example{
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: line-through solid 10px salmon;
+    /* text-decoration-line: underline;
+   text-decoration-color: aquamarine;
+   text-decoration-style: dotted;
+   text-decoration-thickness: 10px; */
+    line-height: 100px;
+    height: 100px;
+  }
+  .line-through{
+    text-decoration-line: line-through;
+  }
   .font-example{
     font-family: "Roboto",monospace;
     font-weight: 400;
-    font-size: 30px;
-    font-variant: small-caps slashed-zero; 
+    font-size: 20px;
+    /* font-variant: small-caps slashed-zero;  */
+
 
   }
   .card{
@@ -32,13 +170,52 @@
     font-size: 30px;
     text-shadow: -200px -1px 0px rgba(49,47,47,0.59);
   }
-  img{
+
+  /* img{
    width: 95%;
    margin-left: 12px;
    margin-top: 10px;
    height: 200px;
    object-fit: cover;
-  }
+  } */
+.clip-path img{
+  width: 30%;
+  object-fit: cover;
+
+}
+.container{
+  width: 100%;
+ background:  url('./assets/buildings.jpg') #332D56 no-repeat 30%/cover  fixed ;
+ /* background-image: ;
+ background-position: ;
+ background-repeat: ;
+ background-size: ;
+ background-clip: ;
+ background-attachment: ; */
+  height: 100vh;
+}
+h1{
+  font-size: 20px;
+}
+.container-child{
+  width: 50%;
+}
+
+ .title{
+   position: absolute;
+   font-size: 20px;
+   width: 80px;
+   height: 27px;
+   top: 1%;
+   left: 22%;
+   z-index: 10;
+   transform: scale(2);
+   color: white;
+   text-align: center;
+   line-height: 27px;
+   background-color: #332D56;
+   clip-path: inset(0.5px round 8px 0);
+}
   .content{
     color: brown;
     margin-left: 10px;
